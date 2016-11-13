@@ -9,7 +9,9 @@
   <div id="killdiv" ng-show="showvar">
 
 
-      <nav class="navbar navbar-default">
+    <div >
+      <!DOCTYPE html>
+      <nav class="navbar navbar-default" style="position: absolute; top: 0; left: 0; width: 100vw;">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -25,16 +27,20 @@
         </div><!-- /.container-fluid -->
       </nav>
 
-      <div class="page-header">
-        <h1 style="text-indent: 4vw;">Tests one</h1>
+
+      <div style=" position: absolute; top: 50px; left: 0px; overflow-y: auto; width: 100vw; height: calc(100vh - 50px);">
+        <div class="page-header">
+          <h1 style="text-indent: 4vw;">Tests one</h1>
+        </div>
+
+        <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 80vw; margin-left: 10vw; margin-top: 165px;" ng-click="beginTest()">Begin Test</button>
       </div>
-
-      <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 80vw; margin-left: 10vw; margin-top: 165px;" ng-click="beginTest()">Begin Test</button>
-
+    </div>
   </div>
+
   <div id="testDiv" ng-show="!showvar" ng-click="showwords()" style="width: 100vw; height: 120vh; position: absolute; background-color: black;">
-      <p id="paragraph to memorize" style="width: 90vw; text-align: center; margin-top: calc(60vh - 95px); margin-left: 5vw; font-size: 25px; color: black;">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      <p id="paragraph to memorize" style="width: 90vw; text-align: center; margin-top: calc(60vh - 95px); margin-left: 5vw; font-size: {{ test.fsize }}; color: black;" ng-repeat=" test in testone | limitTo: 1">
+        {{ test.text }}
       </p>
   </div>
 
@@ -63,6 +69,10 @@
             }, 500);
 
           }
+
+          $scope.testone = [
+            {text:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', durration: 500, fsize: '25px'}
+          ];
 
       });
   </script>
