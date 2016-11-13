@@ -2,35 +2,80 @@
 <html>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+  <script src="Photomem/controller.js"></script>
 <body>
 
   <div ng-app="myApp" ng-controller="myCtrl">
+  <div id="killdiv" ng-show="showvar">
 
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">PhotoMem</a>
+
+    <div >
+      <!DOCTYPE html>
+      <nav class="navbar navbar-default" style="position: absolute; top: 0; left: 0; width: 100vw;">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a class="navbar-brand" href="https://braxattack.github.io/Photomem/photomem.html">PhotoMem</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#">No Link <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">No Link</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+
+      <div style=" position: absolute; top: 50px; left: 0px; overflow-y: auto; width: 100vw; height: calc(100vh - 50px);">
+        <div class="page-header">
+          <h1 style="text-indent: 4vw;">Tests six</h1>
+        </div>
+
+        <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 80vw; margin-left: 10vw; margin-top: 165px;" ng-click="beginTest()">Begin Test</button>
       </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
-          <li><a href="#">Link</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
+    </div>
+  </div>
 
-  <div class="page-header">
-    <h1 style="text-indent: 4vw;">Tests six</h1>
+  <div id="testDiv" ng-show="!showvar" ng-click="showwords()" style="width: 100vw; height: 120vh; position: absolute; background-color: black;">
+      <p id="paragraph to memorize" style="width: 90vw; text-align: center; margin-top: calc(60vh - 95px); margin-left: 5vw; font-size: {{ test.fsize }}; color: black;" ng-repeat=" test in testone | limitTo: 1">
+        {{ test.text }}
+      </p>
   </div>
 
 
   </div>
 
+  <script>
+      var app = angular.module('myApp', []);
+      app.controller('myCtrl', function($scope, $timeout) {
 
+          $scope.showvar = true;
+          $scope.beginTest = function(){
+
+              $scope.showvar = false;
+              $timeout(function () {
+                alert("Test complete");
+                window.location.assign("http://localhost/photoMemoryGame/photomem.html")
+              }, 900000);
+          }
+
+          $scope.showwords = function(){
+            document.getElementById('testDiv').style.backgroundColor = "white";
+            $timeout(function () {
+              document.getElementById('testDiv').style.backgroundColor = "black";
+
+            }, 500);
+
+          }
+
+          $scope.testone = [
+            {text:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', durration: 500, fsize: '25px'}
+          ];
+
+      });
+  </script>
 
   </body>
 </html>
