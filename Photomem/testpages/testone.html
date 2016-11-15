@@ -3,6 +3,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="Photomem/controller.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <body>
 
   <div ng-app="myApp" ng-controller="myCtrl">
@@ -33,15 +35,23 @@
           <h1 style="text-indent: 4vw;">Tests one</h1>
         </div>
 
-        <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 80vw; margin-left: 10vw; margin-top: 165px;" ng-click="beginTest()">Begin Test</button>
+        <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 80vw; margin-left: 10vw;     margin-top: calc(50vh - 150px);" ng-click="beginTest()">Begin Test</button>
+
+        <p style="width: 100vw; text-align: center; margin-top: 40px;">
+          Unsure what to do..? <a>Check out the PhotoMem turotial</a>
+        </p>
       </div>
     </div>
   </div>
 
-  <div id="testDiv" ng-show="!showvar" ng-click="showwords()" style="width: 100vw; height: 120vh; position: absolute; background-color: black;">
-      <p id="paragraph to memorize" style="width: 90vw; text-align: center; margin-top: calc(60vh - 95px); margin-left: 5vw; font-size: {{ test.fsize }}; color: black;" ng-repeat=" test in testone | limitTo: 1">
-        {{ test.text }}
-      </p>
+  <div id="testDiv" ng-show="!showvar" ng-click="showwords()" style="width: 100vw; height: calc(100vh + 60px); position: absolute; background-color: black;">
+      <p style="width:100vw; height:20px; background-color:red; position: absolute; text-align: center;">Scroll down to hide searchbar</p>
+      <div style="margin-top:60px; width: 100vw; height: 100vh; float:left; overflow: hidden;">
+        <p id="clicktobegin" style=" color: white; position: absolute; width: 100vw; text-align: center; font-size: 20px; top: calc(50vh + 20px);">Click to begin test</p>
+        <p id="paragraph to memorize" style="text-align: center; font-size: {{ test.fsize }}; color: black; margin-top: calc(50vh - ({{ test.fsize }}/2));" ng-repeat=" test in testone | limitTo: 1">
+          {{ test.text }}<i class="material-icons" style="font-size:{{ test.fsize }}">{{ test.icon }}</i>
+        </p>
+      </div>
   </div>
 
 
@@ -49,7 +59,7 @@
 
   <script>
       var app = angular.module('myApp', []);
-      app.controller('myCtrl', function($scope, $timeout) {
+      app.controller('myCtrl', function($scope, $timeout, $interval) {
 
           $scope.showvar = true;
           $scope.beginTest = function(){
@@ -62,16 +72,22 @@
           }
 
           $scope.showwords = function(){
-            document.getElementById('testDiv').style.backgroundColor = "white";
-            $timeout(function () {
-              document.getElementById('testDiv').style.backgroundColor = "black";
 
-            }, 500);
+              document.getElementById('clicktobegin').style.zIndex = -3;
+              document.getElementById('testDiv').style.backgroundColor = "white";
+            $interval(function () {
+              document.getElementById('testDiv').style.backgroundColor = "white";
+                $timeout(function () {
+                  document.getElementById('testDiv').style.backgroundColor = "black";
+
+                }, 500);
+            }, 2000);
+
 
           }
 
           $scope.testone = [
-            {text:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', durration: 500, fsize: '25px'}
+            {text:'', icon: 'play_circle_filled', durration: 500, fsize: '200px'}
           ];
 
       });
