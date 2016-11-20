@@ -1,0 +1,42 @@
+.Headerdiv {
+  height: 100px;
+  width: 100vw;
+  background-color: #03A9F4;
+  position: absolute;
+  top: 0;
+}
+
+#headermenubutton {
+  font-size: 55px;
+  line-height: 100px;
+  width: 100px;
+  text-align: center;
+  color: white;
+  float: left;
+}
+
+.headertext {
+  width: calc(100vw - 150px);
+  float: left;
+  line-height: 100px;
+  font-size: 40px;
+  margin: 0;
+  margin-left: 25px;
+}
+
+.bottomdivholder {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  top: 100px;
+  position: absolute;
+  background-color: green;
+}
+
+.bottomdiv {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  position: absolute;
+  overflow: auto;
+  overflow-x: hidden;
+  top: 100px;
+}
