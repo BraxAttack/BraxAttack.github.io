@@ -4,27 +4,98 @@ var app = angular.module('myApp', ["ngRoute"]);
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
+        templateUrl : "login.html"
+    })
+    .when("/home", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
         templateUrl : "home.html"
     })
     .when("/pastTests", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
         templateUrl : "pastTests.html"
     })
     .when("/MemoryTests", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
         templateUrl : "MemoryTests.html"
     })
     .when("/settings", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
         templateUrl : "settings.html"
     })
     .when("/TestOne", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
         templateUrl : "TestOne.html"
     })
     .when("/TestTwo", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
         templateUrl : "TestTwo.html"
     })
     .when("/TestThree", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
         templateUrl : "TestThree.html"
+    })
+    .otherwise({
+        redirectTo : '/home'
     });
 });
+
+app.controller('loginCtrl', function($scope, $location, $rootScope) {
+    $scope.submit = function(){
+        console.log($scope.username);
+        var uname = $scope.username;
+        var password = $scope.password;
+        if($scope.username == 'admin' && $scope.password == 'admin'){
+
+            $rootScope.loggedIn = true;
+            $location.path('/home');
+        } else {
+            alert('Wrong stuff');
+        }
+    };
+});
+
 
 app.controller('myCtrl', function($scope, $timeout, $interval) {
 
@@ -55,7 +126,7 @@ app.controller('myCtrl', function($scope, $timeout, $interval) {
     }
 
     $scope.clickhome = function() {
-      window.location = "#/";
+      window.location = "#/home";
       $scope.removemenu();
     }
 

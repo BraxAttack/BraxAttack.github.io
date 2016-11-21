@@ -88,13 +88,11 @@
 }
 
 .headermenuoptiondiv {
-
   margin: -15px 0px;
   overflow: hidden;
 }
 
 .headermenuoptiontext {
-
   line-height: 80px;
   font-size: 21px;
   font-weight: bold;
@@ -104,8 +102,6 @@
   width: 100vw;
   height: calc(100vh - 100px);
   position: absolute;
-  /* overflow: auto; */
-  /* overflow-x: hidden; */
   top: 100px;
 }
 
@@ -115,4 +111,45 @@
   float: left;
   background-color: white;
 
+}
+
+.loginpagediv {
+  width: 100vw;
+  height: 100vh;
+  background-color: #37474F;
+  position: absolute;
+  top: -100px;
+}
+
+.loginpageimage {
+  width: 30vw;
+  float: left;
+  margin: 10vh 35vw 0 35vw;
+}
+
+.loginwords {
+  color: black;
+  font-family: Arial;
+  font-size: 20px;
+  margin: 20px 20px 4px;
+}
+
+.logininputdiv {
+  float: left;
+  width: 76vw;
+  margin-left: 12vw;
+  position: absolute;
+  top: calc(69vh - 75px);
+}
+
+.loginbutton {
+  margin: 20px 40px;
+  float: right;
+  height: 36px;
+  width: calc(100% - 60px);
+  border-radius: 3px;
+  font-family: Arial;
+  background-color: #4CAF50;
+  color: white;
+  height: 45px;
 }

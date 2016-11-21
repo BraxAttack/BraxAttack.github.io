@@ -1,0 +1,11 @@
+<div ng-controller="loginCtrl" class="loginpagediv">
+  <img class="loginpageimage" src="photomemlogobrandinglogo.png" />
+  <form action="/" id="myLogin">
+    <div class="logininputdiv">
+      <input type="text" id="username" class="logininput" ng-model="username" placeholder="username" style="margin-left: 20px; width: calc(100% - 60px); text-align: center; height: 30px; margin-bottom: 10px; font-size: 18px; color: black;"/><br />
+      <input type="password" id="password" class="logininput" ng-model="password" placeholder="Password" style="margin-left: 20px; width: calc(100% - 60px); text-align: center; height: 30px; font-size: 18px; color: black;"/><br />
+      <button type="button" class="loginbutton" ng-click="submit()">Login</button>
+    </div>
+
+  </form>
+</div>
