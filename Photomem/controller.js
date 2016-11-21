@@ -4,7 +4,7 @@ var app = angular.module('myApp', ["ngRoute"]);
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
-        templateUrl : "main.html"
+        templateUrl : "home.html"
     })
     .when("/red", {
         templateUrl : "red.html"
