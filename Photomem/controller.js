@@ -87,7 +87,7 @@ app.controller('myCtrl', function($scope, $timeout, $interval) {
 
     $scope.showvar = true;
     $scope.beginTest = function(){
-        document.getElementById('headerdivid').style.visibility = "hidden";
+        //document.getElementById('headerdivid').style.visibility = "hidden";
         $scope.showvar = false;
         $timeout(function () {
           alert("Test complete");
