@@ -46,22 +46,22 @@ app.controller('myCtrl', function($scope, $timeout) {
     }
 
     $scope.clickhome = function() {
-      alert("ds");
+      window.location = "#/";
       $scope.removemenu();
     }
 
     $scope.clickmemoryass = function() {
-alert("ds");
+      window.location = "#/MemoryTests";
       $scope.removemenu();
     }
 
     $scope.clickpasttests = function() {
-alert("ds");
+      window.location = "#/pastTests";
       $scope.removemenu();
     }
 
     $scope.clicksettings = function() {
-alert("ds");
+      window.location = "#/settings";
       $scope.removemenu();
     }
 
