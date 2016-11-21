@@ -38,9 +38,7 @@ app.controller('myCtrl', function($scope, $timeout) {
 
     $scope.addmenu = function() {
       //alert("dslkaj");
-
       document.getElementById('slideoutdiv2').style.left = "0vw";
-
       $timeout(function () {
         document.getElementById('slideoutdiv2').style.opacity = "1";
         document.getElementById('slideoutdiv1').style.left = "0vw";
