@@ -1,43 +1,72 @@
 <!DOCTYPE html>
 <html>
+<head>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="controller.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="photomem.css">
+  <link rel="stylesheet" type="text/css" href="photomem.css" >
 
-<body>
+</head>
+<body style="width: 100vw; margin: 0px; background-color: #F5F5F5;">
 
-  <div ng-app="myApp" ng-controller="myCtrl" ng-init="mobilecheck()">
-    <!DOCTYPE html>
-    <div class="Headerdiv">
-        <i id="headermenubutton" class="material-icons">menu</i>
-        <h1 class="headertext">PhotoMem <small style="color: white;">one a day</small></h1>
+  <div ng-app="myApp" ng-controller="myCtrl">
+    <div class="Headerdiv" >
+        <i id="headermenubutton" class="material-icons" ng-click="addmenu()">menu</i>
+        <h1 class="headertext" >PhotoMem</h1>
+    </div>
+    <div id="slideoutdiv">
+      <div id="slideoutdiv1" class="headermenuslideout" style="left: -50vw;">
+          <div class="headermenuslideouttop">
+              <img src="HollywoodsignpcTanyaM.jpg" class="headermenuuserpic" />
+              <p class="headermenunameplace">Braxton Young</p>
+              <p class="headermenunameplaceemail">youngbraxton@southern.edu</p>
+          </div>
+          <div class="headermenuoptiondiv">
+              <i style="float: left; width: 100px; text-align: center; line-height: 80px; font-size: 40px;" class="material-icons">home</i>
+              <p class="headermenuoptiontext">Home</p>
+          </div>
+          <div class="headermenuoptiondiv">
+              <i style="float: left; width: 100px; text-align: center; line-height: 80px; font-size: 40px;" class="material-icons">assessment</i>
+              <p class="headermenuoptiontext">Memory Assesment</p>
+          </div>
+          <div class="headermenuoptiondiv">
+              <i style="float: left; width: 100px; text-align: center; line-height: 80px; font-size: 40px;" class="material-icons">cached</i>
+              <p class="headermenuoptiontext">Past Tests</p>
+          </div>
+          <div class="headermenuoptiondiv">
+              <i style="float: left; width: 100px; text-align: center; line-height: 80px; font-size: 40px;" class="material-icons">settings</i>
+              <p class="headermenuoptiontext">Settings</p>
+          </div>
+
+      </div>
+      <div id="slideoutdiv2" class="headermenuslideoutmodal" style="left: -200vw; opacity: 0;" ng-click="removemenu()">
+
+      </div>
     </div>
 
-    <div class="bottomdivholder" ng-swipe-left="alert('dskdslfj')" >
-
-    </div>
-<!--
   <div class="bottomdiv">
 
     <div class="col-md-3" style="float:left;">
-       <a  ng-repeat="pagelist in PageLists | limitTo:1 " class="btn btn-success btn-lg btn-block btn-huge" style="width:96vw; margin-left:4px; padding: 50px; font-size: 50px; margin-bottom: 33px; background-color: #616161; border-color: #757575;" ng-href="testpages/{{ pagelist.link }}">
+       <a  ng-repeat="pagelist in PageLists | limitTo:1 " class="btn btn-success btn-lg btn-block btn-huge" style="width:96vw; margin-left:4px; padding: 50px; font-size: 50px; margin-bottom: 33px; background-color: #8BC34A; border-color: #8BC34A; top: calc(50vh - 150px); position: absolute; height: 200px; line-height: 100px;" ng-href="testpages/{{ pagelist.link }}">
          Today's Test
          <span style="font-size:21px;">-{{ pagelist.name }}</span>
         </a>
     </div>
 
+<!--
     <div class="list-group" style="float:left;">
       <a  ng-repeat="pagelist in PageLists" type="button" class="list-group-item" style="width: 96vw; margin-left: 2vw; height: 60px; line-height: 40px; font-weight: Bold; font-size: 30px;" ng-href="testpages/{{ pagelist.link }}">{{ pagelist.name }}</a>
     </div>
-
-  </div>
 -->
+  </div>
+
 </div>
 
+<script>
 
+</script>
 
   </body>
 </html>

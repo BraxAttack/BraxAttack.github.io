@@ -1,8 +1,34 @@
 //alert("yay");
 var app = angular.module('myApp', []);
-app.controller('myCtrl', function($scope) {
+app.controller('myCtrl', function($scope, $timeout) {
+
+    $scope.alertfunction = function() {
+
+          alert("theings");
+
+    }
+
+    $scope.removemenu = function() {
+      document.getElementById('slideoutdiv2').style.opacity = "0";
+      document.getElementById('slideoutdiv1').style.left = "-50vw";
+      $timeout(function () {
+        //alert("Test complete");
+        document.getElementById('slideoutdiv2').style.left = "-200vw";
+      }, 200);
 
 
+    }
+
+    $scope.addmenu = function() {
+      //alert("dslkaj");
+
+      document.getElementById('slideoutdiv2').style.left = "0vw";
+
+      $timeout(function () {
+        document.getElementById('slideoutdiv2').style.opacity = "1";
+        document.getElementById('slideoutdiv1').style.left = "0vw";
+      }, 10);
+    }
 
 
     $scope.PageLists = [
