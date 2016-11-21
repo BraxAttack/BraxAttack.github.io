@@ -15,9 +15,12 @@ app.config(function($routeProvider) {
     .when("/settings", {
         templateUrl : "settings.html"
     });
+    .when("/TestOne", {
+        templateUrl : "TestOne.html"
+    });
 });
 
-app.controller('myCtrl', function($scope, $timeout) {
+app.controller('myCtrl', function($scope, $timeout, $interval) {
 
     $scope.alertfunction = function() {
 
@@ -75,6 +78,40 @@ app.controller('myCtrl', function($scope, $timeout) {
       {name:'Test seven', link: 'testseven.html'},
       {name:'Test eight', link: 'testeight.html'},
       {name:'Test nine', link: 'testnine.html'}
+    ];
+
+
+
+
+
+
+    $scope.showvar = true;
+    $scope.beginTest = function(){
+
+        $scope.showvar = false;
+        $timeout(function () {
+          alert("Test complete");
+          window.location.assign("http://localhost/photoMemoryGame/photomem.html")
+        }, 900000);
+    }
+
+    $scope.showwords = function(){
+
+        document.getElementById('clicktobegin').style.zIndex = -3;
+        document.getElementById('testDiv').style.backgroundColor = "white";
+      $interval(function () {
+        document.getElementById('testDiv').style.backgroundColor = "white";
+          $timeout(function () {
+            document.getElementById('testDiv').style.backgroundColor = "black";
+
+          }, 500);
+      }, 2000);
+
+
+    }
+
+    $scope.testone = [
+      {text:'', icon: 'play_circle_filled', durration: 500, fsize: '200px'}
     ];
 
 
