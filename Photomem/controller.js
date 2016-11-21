@@ -10,7 +10,7 @@ app.config(function($routeProvider) {
         templateUrl : "red.html"
     })
     .when("/green", {
-        templateUrl : "green.html"
+        templateUrl : "MemoryTests.html"
     })
     .when("/blue", {
         templateUrl : "blue.html"
