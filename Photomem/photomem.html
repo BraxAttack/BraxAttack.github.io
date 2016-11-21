@@ -2,11 +2,14 @@
 <html>
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="controller.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="photomem.css" >
+
+
 
 </head>
 <body style="width: 100vw; margin: 0px; background-color: #F5F5F5;">
@@ -48,6 +51,15 @@
     </div>
 
   <div class="bottomdiv">
+
+
+    <p><a href="#/">Main</a></p>
+
+    <a href="#red">Red</a>
+    <a href="#green">Green</a>
+    <a href="#blue">Blue</a>
+
+    <div ng-view></div>
 
     <div class="col-md-3" style="float:left;">
        <a  ng-repeat="pagelist in PageLists | limitTo:1 " class="btn btn-success btn-lg btn-block btn-huge" style="width:96vw; margin-left:4px; padding: 50px; font-size: 50px; margin-bottom: 33px; background-color: #43A047; border-color: #43A047; top: calc(50vh - 150px); position: absolute; height: 200px; line-height: 100px;" ng-href="testpages/{{ pagelist.link }}">
