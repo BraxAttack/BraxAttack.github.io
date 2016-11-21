@@ -17,6 +17,12 @@ app.config(function($routeProvider) {
     })
     .when("/TestOne", {
         templateUrl : "TestOne.html"
+    })
+    .when("/TestTwo", {
+        templateUrl : "TestTwo.html"
+    })
+    .when("/TestThree", {
+        templateUrl : "TestThree.html"
     });
 });
 
@@ -68,26 +74,14 @@ app.controller('myCtrl', function($scope, $timeout, $interval) {
       $scope.removemenu();
     }
 
-    $scope.PageLists = [
-      {name:'Test one', link: 'testone.html'},
-      {name:'Test two', link: 'testtwo.html'},
-      {name:'Test three', link: 'testthree.html'},
-      {name:'Test four', link: 'testfour.html'},
-      {name:'Test five', link: 'testfive.html'},
-      {name:'Test six', link: 'testsix.html'},
-      {name:'Test seven', link: 'testseven.html'},
-      {name:'Test eight', link: 'testeight.html'},
-      {name:'Test nine', link: 'testnine.html'}
-    ];
 
 
 
-    //will be pulled from database as current test
-    $scope.currenttest = 5;
-    //subtract to account for 0 in array
-    $scope.currenttestvar = currenttest - 1;
 
-    alert(currenttestvar);
+    //will be pulled from database as current test used to define test
+    $scope.currenttest = 'Three';
+
+
 
     $scope.showvar = true;
     $scope.beginTest = function(){
@@ -116,6 +110,14 @@ app.controller('myCtrl', function($scope, $timeout, $interval) {
 
     $scope.testone = [
       {text:'', icon: 'play_circle_filled', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testtwo = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testthree = [
+      {text:'This is a bunch of words', icon: '', durration: 500, fsize: '40px'}
     ];
 
 

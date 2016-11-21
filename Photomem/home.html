@@ -1,6 +1,6 @@
 <div class="col-md-3" style="float:left;">
-   <a  ng-repeat="pagelist in PageLists | limitTo:1 : 2 " class="btn btn-success btn-lg btn-block btn-huge" style="width:96vw; margin-left:4px; padding: 50px; font-size: 50px; margin-bottom: 33px; background-color: #43A047; border-color: #43A047; top: calc(50vh - 150px); position: absolute; height: 200px; line-height: 100px;" ng-href="#/TestOne">
+   <a class="btn btn-success btn-lg btn-block btn-huge" style="width:96vw; margin-left:4px; padding: 50px; font-size: 50px; margin-bottom: 33px; background-color: #43A047; border-color: #43A047; top: calc(50vh - 150px); position: absolute; height: 200px; line-height: 100px;" ng-href="#/Test{{ currenttest }}">
      Today's Test
-     <span style="font-size:21px;">-{{ pagelist.name }}</span>
+     <span style="font-size:21px;">-Test {{ currenttest }}</span>
     </a>
 </div>
