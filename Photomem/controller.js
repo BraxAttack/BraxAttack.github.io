@@ -82,8 +82,12 @@ app.controller('myCtrl', function($scope, $timeout, $interval) {
 
 
 
+    //will be pulled from database as current test
+    $scope.currenttest = 5;
+    //subtract to account for 0 in array
+    $scope.currenttestvar = currenttest - 1;
 
-
+    alert(currenttestvar);
 
     $scope.showvar = true;
     $scope.beginTest = function(){
