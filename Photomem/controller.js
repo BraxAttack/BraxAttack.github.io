@@ -45,6 +45,25 @@ app.controller('myCtrl', function($scope, $timeout) {
       }, 10);
     }
 
+    $scope.clickhome = function() {
+      alert("ds");
+      $scope.removemenu();
+    }
+
+    $scope.clickmemoryass = function() {
+alert("ds");
+      $scope.removemenu();
+    }
+
+    $scope.clickpasttests = function() {
+alert("ds");
+      $scope.removemenu();
+    }
+
+    $scope.clicksettings = function() {
+alert("ds");
+      $scope.removemenu();
+    }
 
     $scope.PageLists = [
       {name:'Test one', link: 'testone.html'},
