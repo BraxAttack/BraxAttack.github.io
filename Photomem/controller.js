@@ -14,7 +14,7 @@ app.config(function($routeProvider) {
     })
     .when("/settings", {
         templateUrl : "settings.html"
-    });
+    })
     .when("/TestOne", {
         templateUrl : "TestOne.html"
     });
