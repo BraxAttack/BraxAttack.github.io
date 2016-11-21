@@ -4,7 +4,7 @@
   background-color: #37474F;
   position: absolute;
   top: 0;
-  left: 0;
+  visibility: hidden;
 }
 
 #headermenubutton {
@@ -104,8 +104,8 @@
   width: 100vw;
   height: calc(100vh - 100px);
   position: absolute;
-  overflow: auto;
-  overflow-x: hidden;
+  /* overflow: auto; */
+  /* overflow-x: hidden; */
   top: 100px;
 }
 
