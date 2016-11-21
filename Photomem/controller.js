@@ -6,14 +6,14 @@ app.config(function($routeProvider) {
     .when("/", {
         templateUrl : "home.html"
     })
-    .when("/red", {
-        templateUrl : "red.html"
+    .when("/pastTests", {
+        templateUrl : "pastTests.html"
     })
     .when("/MemoryTests", {
         templateUrl : "MemoryTests.html"
     })
-    .when("/blue", {
-        templateUrl : "blue.html"
+    .when("/settings", {
+        templateUrl : "settings.html"
     });
 });
 
