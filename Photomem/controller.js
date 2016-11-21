@@ -1,5 +1,5 @@
 //alert("yay");
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ["ngRoute"]);
 app.controller('myCtrl', function($scope, $timeout) {
 
     $scope.alertfunction = function() {
