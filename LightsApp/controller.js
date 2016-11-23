@@ -45,7 +45,7 @@ app.controller('myCtrl', function($scope, $timeout, $interval, getcurrenttime, $
     }
 
     $scope.updatetime2 = function() {
-      setInterval( function(){$scope.timeupdater2()}, 100);
+      setInterval( function(){$scope.timeupdater2()}, 1000);
 
     }
 
@@ -157,7 +157,7 @@ app.controller('myCtrl', function($scope, $timeout, $interval, getcurrenttime, $
     }
 
     $scope.updatetime = function() {
-      setInterval( function(){$scope.timeupdater()}, 100);
+      setInterval( function(){$scope.timeupdater()}, 1000);
 
     }
 
