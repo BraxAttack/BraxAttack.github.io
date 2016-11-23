@@ -54,7 +54,7 @@ app.config(function($routeProvider) {
               }
             }
         },
-        templateUrl : "TestOne.html"
+        templateUrl : "testpages/TestOne.html"
     })
     .when("/TestTwo", {
         resolve: {
@@ -64,7 +64,7 @@ app.config(function($routeProvider) {
               }
             }
         },
-        templateUrl : "TestTwo.html"
+        templateUrl : "testpages/TestTwo.html"
     })
     .when("/TestThree", {
         resolve: {
@@ -74,7 +74,289 @@ app.config(function($routeProvider) {
               }
             }
         },
-        templateUrl : "TestThree.html"
+        templateUrl : "testpages/TestThree.html"
+    })
+    .when("/TestFour", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestFour.html"
+    })
+    .when("/TestFive", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestFive.html"
+    })
+    .when("/TestSix", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestSix.html"
+    })
+    .when("/TestSeven", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestSeven.html"
+    })
+    .when("/TestEight", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestEight.html"
+    })
+
+    .when("/TestNine", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestNine.html"
+    })
+    .when("/TestTen", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestTen.html"
+    })
+    .when("/TestEleven", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestEleven.html"
+    })
+    .when("/TestTwelve", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestTwelve.html"
+    })
+    .when("/TestThirteen", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestThirteen.html"
+    })
+    .when("/TestFourteen", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestFourteen.html"
+    })
+    .when("/TestFifteen", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestFifteen.html"
+    })
+    .when("/TestSixteen", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestSixteen.html"
+    })
+    .when("/TestSeventeen", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestSeventeen.html"
+    })
+    .when("/TestEighteen", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestEighteen.html"
+    })
+    .when("/TestNineteen", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestNineteen.html"
+    })
+    .when("/TestTwenty", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestTwenty.html"
+    })
+    .when("/TestTwentyOne", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestTwentyOne.html"
+    })
+    .when("/TestTwentyOne", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestTwentyTwo.html"
+    })
+    .when("/TestTwentyOne", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestTwentyTwo.html"
+    })
+    .when("/TestTwentThree", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestTwentyThree.html"
+    })
+
+    .when("/TestTwentyFour", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestTwentyFour.html"
+    })
+    .when("/TestTwentyFive", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestTwentyFive.html"
+    })
+    .when("/TestTwentySix", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestTwentySix.html"
+    })
+    .when("/TestTwentySeven", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestTwentySeven.html"
+    })
+    .when("/TestTwentyEight", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestTwentyEight.html"
+    })
+    .when("/TestTwentyNine", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestTwentyNine.html"
+    })
+    .when("/TestThirty", {
+        resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        },
+        templateUrl : "testpages/TestThirty.html"
     })
     .otherwise({
         redirectTo : '/home'
@@ -177,7 +459,21 @@ app.controller('myCtrl', function($scope, $timeout, $interval) {
       }, 2000);
 
 
-    }
+    };
+
+
+    $scope.testsarray = [
+      {testname: 'Test One', redirectlink: '/TestOne', completed: true},
+      {testname: 'Test Two', redirectlink: '/TestTwo', completed: true},
+      {testname: 'Test Three', redirectlink: '/TestThree', completed: true},
+      {testname: 'Test Four', redirectlink: '/TestFour', completed: true},
+      {testname: 'Test Five', redirectlink: '/TestFive', completed: true},
+      {testname: 'Test Six', redirectlink: '/TestSix', completed: true},
+
+    ];
+
+
+
 
     $scope.testone = [
       {text:'', icon: 'play_circle_filled', durration: 500, fsize: '200px'}
@@ -188,8 +484,119 @@ app.controller('myCtrl', function($scope, $timeout, $interval) {
     ];
 
     $scope.testthree = [
-      {text:'This is a bunch of words', icon: '', durration: 500, fsize: '40px'}
+      {text:'A BLACK HORSE', icon: '', durration: 500, fsize: '50px'}
     ];
+
+    $scope.testfour = [
+      {text:'', icon: 'MY VERY FIRST SENTANCE', durration: 500, fsize: '40px'}
+    ];
+
+    $scope.testfive = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testsix = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testseven = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testeight = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testnine = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testten = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testeleven = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testtwelve = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testthirteen = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testfourteen = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testfifteen = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testsixteen = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testseventeen = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testeighteen = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testnineteen = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testtwenty = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testtwentyone = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testtwentytwo = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testtwentythree = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testtwentyfour = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testtwentyfive = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testtwentysix = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testtwentyseven = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testtwentyeight = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testtwentynine = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+    $scope.testthirty = [
+      {text:'', icon: 'content_cut', durration: 500, fsize: '200px'}
+    ];
+
+
+
 
 
 
