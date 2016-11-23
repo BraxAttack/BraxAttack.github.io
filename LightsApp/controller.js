@@ -32,6 +32,7 @@ app.controller('myCtrl', function($scope, $timeout, $interval, getcurrenttime, $
       $scope.phprespone = response;
       $rootScope.currenttime2 = response;
       $scope.updatetime2;
+      alert("wee");
     });
 
     $scope.tplus2 = 0;
