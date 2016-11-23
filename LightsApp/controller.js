@@ -21,7 +21,17 @@ app.service('getcurrenttime', function() {
 
 });
 
-app.controller('myCtrl', function($scope, $timeout, $interval, getcurrenttime, $rootScope) {
+
+
+
+app.controller('myCtrl', function($scope, $timeout, $interval, getcurrenttime, $rootScope, $http) {
+
+    $http.get('http://127.0.0.1/BraxAttack.github.io/LightsApp/sysdate.php')
+    .success(function(response) {
+      $scope.phprespone = response;
+    });
+
+
 
 
     $scope.alertfunction = function() {
