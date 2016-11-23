@@ -26,12 +26,28 @@ app.service('getcurrenttime', function() {
 
 app.controller('myCtrl', function($scope, $timeout, $interval, getcurrenttime, $rootScope, $http) {
 
-    $http.get('http://127.0.0.1/BraxAttack.github.io/LightsApp/sysdate.php')
+    //$http.get('http://127.0.0.1/BraxAttack.github.io/LightsApp/sysdate.php')
+    $http.get('http://52.41.37.153/sysdate.php')
     .success(function(response) {
       $scope.phprespone = response;
+      $rootScope.currenttime2 = response;
+      $scope.updatetime2;
     });
 
+    $scope.tplus2 = 0;
 
+    $scope.timeupdater2 = function() {
+      $scope.tplus2 += 100;
+      $scope.actualtime = $rootScope.currenttime2 + $scope.tplus2;
+      document.getElementById("colordiv2").innerHTML = $scope.actualtime ;
+
+
+    }
+
+    $scope.updatetime2 = function() {
+      setInterval( function(){$scope.timeupdater2()}, 100);
+
+    }
 
 
     $scope.alertfunction = function() {
