@@ -65,7 +65,7 @@ app.controller('myCtrl', function($scope, $timeout, $interval, getcurrenttime, $
       $interval(function () {
         document.getElementById('testDiv').style.backgroundColor = "white";
           $timeout(function () {
-            document.getElementById('testDiv').style.backgroundColor = "red";
+            document.getElementById('testDiv').style.backgroundColor = "black";
 
           }, 500);
       }, 2000);
