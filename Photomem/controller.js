@@ -7,355 +7,355 @@ app.config(function($routeProvider) {
         templateUrl : "login.html"
     })
     .when("/home", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "home.html"
     })
     .when("/pastTests", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "pastTests.html"
     })
     .when("/MemoryTests", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "MemoryTests.html"
     })
     .when("/settings", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "settings.html"
     })
     .when("/TestOne", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestOne.html"
     })
     .when("/TestTwo", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestTwo.html"
     })
     .when("/TestThree", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestThree.html"
     })
     .when("/TestFour", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestFour.html"
     })
     .when("/TestFive", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestFive.html"
     })
     .when("/TestSix", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestSix.html"
     })
     .when("/TestSeven", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestSeven.html"
     })
     .when("/TestEight", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestEight.html"
     })
 
     .when("/TestNine", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestNine.html"
     })
     .when("/TestTen", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestTen.html"
     })
     .when("/TestEleven", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestEleven.html"
     })
     .when("/TestTwelve", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestTwelve.html"
     })
     .when("/TestThirteen", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestThirteen.html"
     })
     .when("/TestFourteen", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestFourteen.html"
     })
     .when("/TestFifteen", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestFifteen.html"
     })
     .when("/TestSixteen", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestSixteen.html"
     })
     .when("/TestSeventeen", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestSeventeen.html"
     })
     .when("/TestEighteen", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestEighteen.html"
     })
     .when("/TestNineteen", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestNineteen.html"
     })
     .when("/TestTwenty", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestTwenty.html"
     })
     .when("/TestTwentyOne", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestTwentyOne.html"
     })
     .when("/TestTwentyOne", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestTwentyTwo.html"
     })
-    .when("/TestTwentyOne", {
-        resolve: {
+    .when("/TestTwentyTwo", {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestTwentyTwo.html"
     })
     .when("/TestTwentThree", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestTwentyThree.html"
     })
 
     .when("/TestTwentyFour", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestTwentyFour.html"
     })
     .when("/TestTwentyFive", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestTwentyFive.html"
     })
     .when("/TestTwentySix", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestTwentySix.html"
     })
     .when("/TestTwentySeven", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestTwentySeven.html"
     })
     .when("/TestTwentyEight", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestTwentyEight.html"
     })
     .when("/TestTwentyNine", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestTwentyNine.html"
     })
     .when("/TestThirty", {
-        resolve: {
+        /* resolve: {
             "check": function($location, $rootScope) {
               if(!$rootScope.loggedIn){
                   $location.path('/');
               }
             }
-        },
+        }, */
         templateUrl : "testpages/TestThirty.html"
     })
     .otherwise({
@@ -407,6 +407,28 @@ app.controller('myCtrl', function($scope, $timeout, $interval) {
       }, 10);
     }
 
+    $scope.removeprogress = function() {
+      document.getElementById('slideoutdiv2').style.opacity = "0";
+      document.getElementById('progressbarIDdiv').style.left = "-110vw";
+      $timeout(function () {
+        //alert("Test complete");
+        document.getElementById('slideoutdiv2').style.left = "-200vw";
+      }, 200);
+
+
+    }
+
+    $scope.addprogress = function() {
+      //alert("dslkaj");
+      document.getElementById('slideoutdiv2').style.left = "0vw";
+      $timeout(function () {
+        document.getElementById('slideoutdiv2').style.opacity = "1";
+        document.getElementById('progressbarIDdiv').style.left = "0vw";
+      }, 10);
+    }
+
+
+
     $scope.clickhome = function() {
       window.location = "#/home";
       $scope.removemenu();
@@ -434,6 +456,11 @@ app.controller('myCtrl', function($scope, $timeout, $interval) {
     //will be pulled from database as current test used to define test
     $scope.currenttest = 'Three';
 
+    //value to be returned by function as percentage of tests done (percentage)
+    $scope.percentagereturn = 10;
+    $scope.contrapercentagecompleted = 100 - $scope.percentagereturn;
+    $scope.percentagecompleted = $scope.percentagereturn;
+
 
 
     $scope.showvar = true;
@@ -449,7 +476,7 @@ app.controller('myCtrl', function($scope, $timeout, $interval) {
     $scope.showwords = function(){
 
         document.getElementById('clicktobegin').style.zIndex = -3;
-        document.getElementById('testDiv').style.backgroundColor = "white";
+        document.getElementById('testDiv').style.backgroundColor = "black";
       $interval(function () {
         document.getElementById('testDiv').style.backgroundColor = "white";
           $timeout(function () {
@@ -461,7 +488,6 @@ app.controller('myCtrl', function($scope, $timeout, $interval) {
 
     };
 
-
     $scope.testsarray = [
       {testname: 'Test One', redirectlink: '/TestOne', completed: true},
       {testname: 'Test Two', redirectlink: '/TestTwo', completed: true},
@@ -469,6 +495,31 @@ app.controller('myCtrl', function($scope, $timeout, $interval) {
       {testname: 'Test Four', redirectlink: '/TestFour', completed: true},
       {testname: 'Test Five', redirectlink: '/TestFive', completed: true},
       {testname: 'Test Six', redirectlink: '/TestSix', completed: true},
+      {testname: 'Test Seven', redirectlink: '/TestSeven', completed: true},
+      {testname: 'Test Eight', redirectlink: '/TestEight', completed: true},
+      {testname: 'Test Nine', redirectlink: '/TestNine', completed: true},
+      {testname: 'Test Ten', redirectlink: '/TestTen', completed: true},
+      {testname: 'Test Eleven', redirectlink: '/TestEleven', completed: true},
+      {testname: 'Test Twelve', redirectlink: '/TestTwelve', completed: true},
+      {testname: 'Test Thirteen', redirectlink: '/TestThirteen', completed: true},
+      {testname: 'Test Fourteen', redirectlink: '/TestFourteen', completed: true},
+      {testname: 'Test Fifteen', redirectlink: '/TestFifteen', completed: true},
+      {testname: 'Test Sixteen', redirectlink: '/TestSixteen', completed: true},
+      {testname: 'Test Seventeen', redirectlink: '/TestSeventeen', completed: true},
+      {testname: 'Test Eighteen', redirectlink: '/TestEighteen', completed: true},
+      {testname: 'Test Nineteen', redirectlink: '/TestNineteen', completed: true},
+      {testname: 'Test Twenty', redirectlink: '/TestTwenty', completed: true},
+      {testname: 'Test Twentyone', redirectlink: '/testTwentyOne', completed: true},
+      {testname: 'Test Twentytwo', redirectlink: '/TestTwentyTwo', completed: true},
+      {testname: 'Test Twentythree', redirectlink: '/TestTwentyThree', completed: true},
+      {testname: 'Test Twentyfour', redirectlink: '/TestTwentyFour', completed: true},
+      {testname: 'Test Twentyfive', redirectlink: '/TestTwentyFive', completed: true},
+      {testname: 'Test Twentysix', redirectlink: '/TestTwentySix', completed: true},
+      {testname: 'Test Twentyseven', redirectlink: '/TestTwentySeven', completed: true},
+      {testname: 'Test Twentyeight', redirectlink: '/TestTwentyEight', completed: true},
+      {testname: 'Test Twentynine', redirectlink: '/TestTwentyNine', completed: true},
+      {testname: 'Test Thirty', redirectlink: '/TestThirty', completed: true}
+
 
     ];
 

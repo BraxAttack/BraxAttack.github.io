@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!--
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+-->
+
+<script src="libraries/angular.min.js"></script>
+<script src="libraries/angular-route.js"></script>
+<link href="libraries/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
   <script src="controller.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -18,34 +25,62 @@
     <div class="Headerdiv" id="headerdivid" >
         <i id="headermenubutton" class="material-icons" ng-click="addmenu()">menu</i>
         <h1 class="headertext" >PhotoMem</h1>
+
+
+
+    <div id="progressbarIDdiv" class="progressbarIDdivclass">
+        <p class="progressbartitle">
+          Total Progress...
+        </p>
+        <p class="progressbarpercentagetitle">
+          {{ percentagecompleted }}%
+        </p>
+        <div class="progressbardiv">
+          <div class="progressbar" style="width: {{ percentagecompleted }}%;">
+
+          </div>
+        </div>
+    </div>
+
+
+        <div class="progressbarbutton" ng-click="addprogress()">
+          {{ percentagecompleted }}%
+          <div class="progressbarbuttonCONTRAcontent" style="height: {{ contrapercentagecompleted }}%;">
+
+          </div>
+        </div>
+
+
+
     <div id="slideoutdiv">
       <div id="slideoutdiv1" class="headermenuslideout" style="left: -50vw;">
           <div class="headermenuslideouttop">
               <img src="HollywoodsignpcTanyaM.jpg" class="headermenuuserpic" />
               <p class="headermenunameplace">Braxton Young</p>
               <p class="headermenunameplaceemail">youngbraxton@southern.edu</p>
+              <img class="headermenulogo" src="photomemlogobrandinglogo.png" />
           </div>
-          <div class="headermenuoptiondiv">
+          <div class="headermenuoptiondiv" ng-click="clickhome()">
               <i style="float: left; width: 100px; text-align: center; line-height: 80px; font-size: 40px;" class="material-icons">home</i>
 
-              <p class="headermenuoptiontext" ng-click="clickhome()">Home</p>
+              <p class="headermenuoptiontext">Home</p>
 
           </div>
-          <div class="headermenuoptiondiv">
+          <div class="headermenuoptiondiv" ng-click="clickmemoryass()">
               <i style="float: left; width: 100px; text-align: center; line-height: 80px; font-size: 40px;" class="material-icons">assessment</i>
-                <p class="headermenuoptiontext" ng-click="clickmemoryass()">Memory Assesment</p>
+                <p class="headermenuoptiontext">Memory Assesment</p>
           </div>
-          <div class="headermenuoptiondiv">
+          <div class="headermenuoptiondiv" ng-click="clickpasttests()">
               <i style="float: left; width: 100px; text-align: center; line-height: 80px; font-size: 40px;" class="material-icons">cached</i>
-              <p class="headermenuoptiontext" ng-click="clickpasttests()">Past Tests</p>
+              <p class="headermenuoptiontext">Past Tests</p>
           </div>
-          <div class="headermenuoptiondiv">
+          <div class="headermenuoptiondiv" ng-click="clicksettings()">
               <i style="float: left; width: 100px; text-align: center; line-height: 80px; font-size: 40px;" class="material-icons">settings</i>
-              <p class="headermenuoptiontext" ng-click="clicksettings">Settings</p>
+              <p class="headermenuoptiontext">Settings</p>
           </div>
 
       </div>
-      <div id="slideoutdiv2" class="headermenuslideoutmodal" style="left: -200vw; opacity: 0;" ng-click="removemenu()">
+      <div id="slideoutdiv2" class="headermenuslideoutmodal" style="left: -200vw; opacity: 0;" ng-click="removemenu(); removeprogress()">
 
       </div>
     </div>
