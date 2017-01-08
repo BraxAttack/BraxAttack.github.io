@@ -46,6 +46,16 @@ app.config(function($routeProvider) {
         }, */
         templateUrl : "settings.html"
     })
+    .when("/tutorial", {
+        /* resolve: {
+            "check": function($location, $rootScope) {
+              if(!$rootScope.loggedIn){
+                  $location.path('/');
+              }
+            }
+        }, */
+        templateUrl : "tutorial.html"
+    })
     .when("/TestOne", {
         /* resolve: {
             "check": function($location, $rootScope) {
@@ -471,6 +481,12 @@ app.controller('myCtrl', function($scope, $timeout, $interval) {
           alert("Test complete");
           window.location.assign("http://localhost/photoMemoryGame/photomem.html")
         }, 900000);
+    }
+
+    $scope.endTest = function(){
+        //document.getElementById('headerdivid').style.visibility = "hidden";
+        $scope.showvar = true;
+
     }
 
     $scope.showwords = function(){

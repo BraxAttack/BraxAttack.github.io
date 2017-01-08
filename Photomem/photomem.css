@@ -355,3 +355,13 @@ top: 5px;
   right: 10vw;
   bottom: 7vw;
 }
+
+.exittestbutton {
+  height: 90px;
+  width: 90px;
+  background-color: #00C853;
+  border-radius: 50%;
+  position: absolute;
+  right: 10vw;
+  bottom: 8vw;
+}

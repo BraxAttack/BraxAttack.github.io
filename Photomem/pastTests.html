@@ -1,11 +1,15 @@
-<div style="width: 100vw; height: calc(100vh - 100px); padding-top: 1.333vw; ">
-  <a ng-repeat="test in testsarray" ng-href="#{{ test.redirectlink }}">
-    <div class="pastTestDiv">
-        {{ test.testname }}
-    </div>
-    <p class="pastTestDivPercentage">
-      100%
-    </p>
-  </a>
+<div ng-include="'header.html'"></div>
+<div class="bottomdiv">
 
+  <div style="width: 100vw; height: calc(100vh - 100px); padding-top: 1.333vw; ">
+    <a ng-repeat="test in testsarray" ng-href="#{{ test.redirectlink }}">
+      <div class="pastTestDiv">
+          {{ test.testname }}
+      </div>
+      <p class="pastTestDivPercentage">
+        100%
+      </p>
+    </a>
+
+  </div>
 </div>
